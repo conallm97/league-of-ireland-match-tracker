@@ -74,4 +74,10 @@ public class TestController {
     public List<Team> importTeams() {
         return footballApiService.fetchAndSaveTeams();
     }
+
+    @GetMapping("/api/import-fixtures")
+    public List<Fixture> importFixtures() {
+        return footballApiService.fetchAndSaveFixtures();
+    }
+
 }
